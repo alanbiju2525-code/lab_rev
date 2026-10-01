@@ -24,6 +24,7 @@ public:
         while(days > 0){
 
             int max;
+            temp.day++;
 
             if(temp.month == 2 ){
                 if(temp.year % 400 == 0 || temp.year % 4 == 0 && temp.year % 100 != 0){
@@ -52,6 +53,7 @@ public:
             }
             days--;
         }
+        return temp;
     }
 
     void display() {
